@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0230df6e-3807-4f9f-87db-2a6ce104b2da" name="Default Changelist" comment="aded category repo">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e2fced04-88e0-4ac0-ada3-727a35e8f44a.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e2fced04-88e0-4ac0-ada3-727a35e8f44a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e2fced04-88e0-4ac0-ada3-727a35e8f44a/storage_v2/_src_/schema/todo.Rmg2AA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e2fced04-88e0-4ac0-ada3-727a35e8f44a/storage_v2/_src_/schema/todo.Rmg2AA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/TodoListApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/PriorityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Priority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Stat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/PriorityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/test/java/com/maks/todoList/TodoListApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/CategoryController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/TodoList">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jvX6djslvmNKr4LcMLShmyY2HE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="e2fced04-88e0-4ac0-ada3-727a35e8f44a" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/TodoList/src/test/java/com/maks/TodoList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.maks.todoList.controller" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="com.maks.todoList.entity" />
+      <recent name="" />
+      <recent name="com.maks.TodoList.entity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TodoListApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="TodoList.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maks.todoList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.maks.todoList.TodoListApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.TodoListApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0230df6e-3807-4f9f-87db-2a6ce104b2da" name="Default Changelist" comment="" />
+      <created>1604685364479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604685364479</updated>
+      <workItem from="1604685365801" duration="14852000" />
+    </task>
+    <task id="LOCAL-00001" summary="aded category repo">
+      <created>1604757219995</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604757219995</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="aded category repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="aded category repo" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2779" y="451" width="420" height="217" key="#Assign_Data_Sources" timestamp="1604698979804">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2779" y="451" width="420" height="217" key="#Assign_Data_Sources/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604698979804" />
+    <state x="2506" y="238" key="#Inspections" timestamp="1604699499452">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2506" y="238" key="#Inspections/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604699499452" />
+    <state x="2672" y="418" key="#Scopes" timestamp="1604690348511">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2672" y="418" key="#Scopes/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604690348511" />
+    <state x="2472" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604756632167">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604756632167" />
+    <state x="2685" y="276" key="#com.intellij.ide.util.MemberChooser" timestamp="1604758695964">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2685" y="276" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604758695964" />
+    <state x="2609" y="280" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1604699799982">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2609" y="280" key="#com.intellij.ide.util.PackageChooserDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604699799982" />
+    <state x="2550" y="179" width="659" height="650" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1604699848222">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2550" y="179" width="659" height="650" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604699848222" />
+    <state x="2550" y="358" key="#com.intellij.jpa.generation.ui.ImportMappingsDialog" timestamp="1604699756609">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2550" y="358" key="#com.intellij.jpa.generation.ui.ImportMappingsDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604699756609" />
+    <state width="1637" height="281" key="GridCell.Tab.0.bottom" timestamp="1604760621401">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1637" height="281" key="GridCell.Tab.0.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
+    <state width="1637" height="281" key="GridCell.Tab.0.center" timestamp="1604760621401">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1637" height="281" key="GridCell.Tab.0.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
+    <state width="1637" height="281" key="GridCell.Tab.0.left" timestamp="1604760621400">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1637" height="281" key="GridCell.Tab.0.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621400" />
+    <state width="1637" height="281" key="GridCell.Tab.0.right" timestamp="1604760621401">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1637" height="281" key="GridCell.Tab.0.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
+    <state width="1637" height="281" key="GridCell.Tab.1.bottom" timestamp="1604760621401">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1637" height="281" key="GridCell.Tab.1.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
+    <state width="1637" height="281" key="GridCell.Tab.1.center" timestamp="1604760621401">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1637" height="281" key="GridCell.Tab.1.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
+    <state width="1637" height="281" key="GridCell.Tab.1.left" timestamp="1604760621401">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1637" height="281" key="GridCell.Tab.1.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
+    <state width="1637" height="281" key="GridCell.Tab.1.right" timestamp="1604760621401">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1637" height="281" key="GridCell.Tab.1.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
+    <state width="267" height="457" key="HiddenNamespacesPopup" timestamp="1604698022764">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="267" height="457" key="HiddenNamespacesPopup/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604698022764" />
+    <state x="2381" y="205" key="SettingsEditor" timestamp="1604756688399">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="205" key="SettingsEditor/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604756688399" />
+    <state x="2601" y="301" width="540" height="524" key="StructurePopup" timestamp="1604687427865">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2601" y="301" width="540" height="524" key="StructurePopup/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604687427865" />
+    <state x="2694" y="282" key="chooseDestDirectoryDialog" timestamp="1604698279114">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2694" y="282" key="chooseDestDirectoryDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604698279114" />
+    <state x="2778" y="420" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1604689085955">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2778" y="420" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604689085955" />
+    <state x="2762" y="447" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1604688339060">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2762" y="447" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604688339060" />
+    <state x="2676" y="380" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1604699059340">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2676" y="380" width="408" height="355" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604699059340" />
+    <state x="2738" y="228" width="674" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604688326018">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2738" y="228" width="674" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604688326018" />
+  </component>
+</project>

@@ -1,14 +1,31 @@
 package com.maks.todoList.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.maks.todoList.entity.Category;
+import com.maks.todoList.repository.CategoryRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("/priority")
+@RequestMapping("/category")
 public class CategoryController {
-    @GetMapping("/test")
-    public void test(){
+    private CategoryRepository categoryRepository;
 
+@Autowired
+    public CategoryController(CategoryRepository categoryRepository) {
+        this.categoryRepository = categoryRepository;
+    }
+
+    @GetMapping("/test")
+    public List<Category> test() {
+
+        List<Category> list = categoryRepository.findAll();
+        return list;
+    }
+
+    @PostMapping("/add")
+    public Category add(@RequestBody Category category) {
+        return categoryRepository.save(category);
     }
 }
