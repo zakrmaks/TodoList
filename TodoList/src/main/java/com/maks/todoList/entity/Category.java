@@ -2,13 +2,17 @@ package com.maks.todoList.entity;
 
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.data.repository.cdi.Eager;
 
 import javax.persistence.*;
+import java.security.spec.ECField;
 import java.util.Objects;
 
 @Entity
 @NoArgsConstructor
 @EqualsAndHashCode
+@Setter
 public class Category {
     private Long id;
     private String title;
@@ -22,18 +26,10 @@ public class Category {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @Basic
     @Column(name = "title")
     public String getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     @Basic
@@ -42,18 +38,10 @@ public class Category {
         return completedCount;
     }
 
-    public void setCompletedCount(Long completedCount) {
-        this.completedCount = completedCount;
-    }
-
     @Basic
     @Column(name = "uncompleted_count")
     public Long getUncompletedCount() {
         return uncompletedCount;
-    }
-
-    public void setUncompletedCount(Long uncompletedCount) {
-        this.uncompletedCount = uncompletedCount;
     }
 
 }

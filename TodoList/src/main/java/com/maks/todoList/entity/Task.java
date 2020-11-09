@@ -2,6 +2,7 @@ package com.maks.todoList.entity;
 
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -10,6 +11,7 @@ import java.sql.Timestamp;
 @Entity
 @NoArgsConstructor
 @EqualsAndHashCode
+@Setter
 public class Task {
     private Long id;
     private String title;
@@ -25,18 +27,10 @@ public class Task {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     @Basic
     @Column(name = "title")
     public String getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     @Basic
@@ -45,18 +39,10 @@ public class Task {
         return completed;
     }
 
-    public void setCompleted(Integer completed) {
-        this.completed = completed;
-    }
-
     @Basic
     @Column(name = "date")
     public Date getDate() {
         return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
 
@@ -66,17 +52,9 @@ public class Task {
         return priority;
     }
 
-    public void setPriority(Priority priorityByPriorityId) {
-        this.priority = priorityByPriorityId;
-    }
-
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
     public Category getCategory() {
         return category;
-    }
-
-    public void setCategory(Category categoryByCategoryId) {
-        this.category = categoryByCategoryId;
     }
 }

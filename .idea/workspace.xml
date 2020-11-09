@@ -16,35 +16,23 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0230df6e-3807-4f9f-87db-2a6ce104b2da" name="Default Changelist" comment="aded category repo">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e2fced04-88e0-4ac0-ada3-727a35e8f44a.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e2fced04-88e0-4ac0-ada3-727a35e8f44a/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e2fced04-88e0-4ac0-ada3-727a35e8f44a/storage_v2/_src_/schema/todo.Rmg2AA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/e2fced04-88e0-4ac0-ada3-727a35e8f44a/storage_v2/_src_/schema/todo.Rmg2AA.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/TodoListApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/PriorityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Priority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Stat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/PriorityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoList/src/test/java/com/maks/todoList/TodoListApplicationTests.java" afterDir="false" />
+    <list default="true" id="0230df6e-3807-4f9f-87db-2a6ce104b2da" name="Default Changelist" comment="&#10;implemented returning method of lists of Category &amp;&amp; Priority.&#10;implemented StatRepository.">
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/search/TaskSearchValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/PriorityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/PriorityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Priority.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Priority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Stat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/entity/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/PriorityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/PriorityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/search/CategorySearchValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/search/CategorySearchValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/search/PrioritySearchValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/search/PrioritySearchValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +59,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -99,18 +88,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/TodoList/src/test/java/com/maks/TodoList" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
+    <key name="CreateTestDialog.RecentsKey">
       <recent name="com.maks.todoList.controller" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.maks.todoList.entity" />
       <recent name="" />
       <recent name="com.maks.TodoList.entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.maks.todoList.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager">
@@ -143,7 +141,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604685364479</updated>
-      <workItem from="1604685365801" duration="14852000" />
+      <workItem from="1604685365801" duration="30297000" />
+      <workItem from="1604823675254" duration="11864000" />
     </task>
     <task id="LOCAL-00001" summary="aded category repo">
       <created>1604757219995</created>
@@ -152,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604757219995</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&#10;implemented returning method of lists of Category &amp;&amp; Priority.&#10;implemented StatRepository.">
+      <created>1604783443801</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604783443801</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,10 +186,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aded category repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="aded category repo" />
+    <MESSAGE value="&#10;implemented returning method of lists of Category &amp;&amp; Priority.&#10;implemented StatRepository." />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;implemented returning method of lists of Category &amp;&amp; Priority.&#10;implemented StatRepository." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2779" y="451" width="420" height="217" key="#Assign_Data_Sources" timestamp="1604698979804">
@@ -202,10 +210,10 @@
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state x="2472" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604756632167" />
-    <state x="2685" y="276" key="#com.intellij.ide.util.MemberChooser" timestamp="1604758695964">
+    <state x="2685" y="276" key="#com.intellij.ide.util.MemberChooser" timestamp="1604840724215">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state x="2685" y="276" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604758695964" />
+    <state x="2685" y="276" key="#com.intellij.ide.util.MemberChooser/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604840724215" />
     <state x="2609" y="280" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1604699799982">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
@@ -218,46 +226,74 @@
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state x="2550" y="358" key="#com.intellij.jpa.generation.ui.ImportMappingsDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604699756609" />
-    <state width="1637" height="281" key="GridCell.Tab.0.bottom" timestamp="1604760621401">
+    <state x="2660" y="315" key="FileChooserDialogImpl" timestamp="1604825809946">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1637" height="281" key="GridCell.Tab.0.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
-    <state width="1637" height="281" key="GridCell.Tab.0.center" timestamp="1604760621401">
+    <state x="2660" y="315" key="FileChooserDialogImpl/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604825809946" />
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1604909894031">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1637" height="281" key="GridCell.Tab.0.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
-    <state width="1637" height="281" key="GridCell.Tab.0.left" timestamp="1604760621400">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604909894031" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1604909894031">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1637" height="281" key="GridCell.Tab.0.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621400" />
-    <state width="1637" height="281" key="GridCell.Tab.0.right" timestamp="1604760621401">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604909894031" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1604909894031">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1637" height="281" key="GridCell.Tab.0.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
-    <state width="1637" height="281" key="GridCell.Tab.1.bottom" timestamp="1604760621401">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604909894031" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1604909894031">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1637" height="281" key="GridCell.Tab.1.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
-    <state width="1637" height="281" key="GridCell.Tab.1.center" timestamp="1604760621401">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604909894031" />
+    <state width="1877" height="208" key="GridCell.Tab.1.bottom" timestamp="1604909894031">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1637" height="281" key="GridCell.Tab.1.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
-    <state width="1637" height="281" key="GridCell.Tab.1.left" timestamp="1604760621401">
+    <state width="1877" height="281" key="GridCell.Tab.1.bottom/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
+    <state width="1877" height="208" key="GridCell.Tab.1.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604909894031" />
+    <state width="1877" height="208" key="GridCell.Tab.1.center" timestamp="1604909894031">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1637" height="281" key="GridCell.Tab.1.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
-    <state width="1637" height="281" key="GridCell.Tab.1.right" timestamp="1604760621401">
+    <state width="1877" height="281" key="GridCell.Tab.1.center/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
+    <state width="1877" height="208" key="GridCell.Tab.1.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604909894031" />
+    <state width="1877" height="208" key="GridCell.Tab.1.left" timestamp="1604909894031">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state width="1637" height="281" key="GridCell.Tab.1.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604760621401" />
+    <state width="1877" height="281" key="GridCell.Tab.1.left/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
+    <state width="1877" height="208" key="GridCell.Tab.1.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604909894031" />
+    <state width="1877" height="208" key="GridCell.Tab.1.right" timestamp="1604909894031">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.1.right/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
+    <state width="1877" height="208" key="GridCell.Tab.1.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604909894031" />
+    <state width="1877" height="347" key="GridCell.Tab.2.bottom" timestamp="1604782728554">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.2.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604782728554" />
+    <state width="1877" height="347" key="GridCell.Tab.2.center" timestamp="1604782728554">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.2.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604782728554" />
+    <state width="1877" height="347" key="GridCell.Tab.2.left" timestamp="1604782728554">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.2.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604782728554" />
+    <state width="1877" height="347" key="GridCell.Tab.2.right" timestamp="1604782728554">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.2.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604782728554" />
     <state width="267" height="457" key="HiddenNamespacesPopup" timestamp="1604698022764">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state width="267" height="457" key="HiddenNamespacesPopup/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604698022764" />
-    <state x="2381" y="205" key="SettingsEditor" timestamp="1604756688399">
+    <state x="2381" y="205" key="SettingsEditor" timestamp="1604823656671">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
-    <state x="2381" y="205" key="SettingsEditor/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604756688399" />
+    <state x="2381" y="205" key="SettingsEditor/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604823656671" />
     <state x="2601" y="301" width="540" height="524" key="StructurePopup" timestamp="1604687427865">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
@@ -282,5 +318,34 @@
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state x="2738" y="228" width="674" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604688326018" />
+    <state x="2651" y="322" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1604843466772">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2651" y="322" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604843466772" />
+    <state x="2536" y="260" key="run.anything.popup" timestamp="1604907296928">
+      <screen x="1920" y="40" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="260" key="run.anything.popup/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604907296928" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/PriorityController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/PriorityController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/CategoryController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

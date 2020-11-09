@@ -5,10 +5,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NoArgsConstructor
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
-public class PrioritySearchValues {
-    private String priorityParam;
+public class TaskSearchValues {
+    private String text;
+    private Integer completed;
+    private Long priorityId;
+    private Long categoryId;
 }

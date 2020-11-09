@@ -3,6 +3,8 @@ package com.maks.todoList.controller;
 import com.maks.todoList.entity.Category;
 import com.maks.todoList.entity.Priority;
 import com.maks.todoList.repository.PriorityRepository;
+import com.maks.todoList.search.CategorySearchValues;
+import com.maks.todoList.search.PrioritySearchValues;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
@@ -78,5 +80,12 @@ return ResponseEntity.ok(priorityRepository.save(priority));
             return new ResponseEntity("id="+id+" not found", HttpStatus.NOT_ACCEPTABLE);
         }
         return new ResponseEntity(HttpStatus.OK);
+    }
+
+    @PostMapping("/search")
+    public ResponseEntity<List<Priority>> search(@RequestBody PrioritySearchValues prioritySearchValues){
+
+        //if empty - return all values
+        return ResponseEntity.ok(priorityRepository.findByTitle(prioritySearchValues.getPriorityParam()));
     }
 }
