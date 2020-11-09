@@ -1,7 +1,7 @@
 package com.maks.todoList.controller;
 
 import com.maks.todoList.entity.Stat;
-import com.maks.todoList.repository.StatRepository;
+import com.maks.todoList.service.StatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,15 +12,15 @@ import java.util.List;
 @RestController
 @RequestMapping("/status")
 public class StatController {
-    StatRepository statRepository;
+    StatService statService;
 
     @Autowired
-    public StatController(StatRepository statRepository) {
-        this.statRepository = statRepository;
+    public StatController(StatService statService) {
+        this.statService = statService;
     }
-    @GetMapping("findAll")
+    @GetMapping("/findAll")
     public List<Stat> findAll(){
-        return statRepository.findAllByOrderById();
+        return statService.findAll();
     }
 
-}
+    }
