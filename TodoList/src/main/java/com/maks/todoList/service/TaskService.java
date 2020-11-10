@@ -9,9 +9,9 @@ import java.util.List;
 
 public interface TaskService {
     List<Task> findAll();
-    ResponseEntity<Task>  findById(Long id);
-    ResponseEntity<Task> add(Task task);
-    ResponseEntity<Task>  update(Task task);
-    ResponseEntity deleteById(Long id);
-    ResponseEntity<Page<Task>> search(TaskSearchValues taskSearchValues);
+    Task    findById(Long id);
+    Task   add(Task task);
+    Task    update(Task task);
+    void deleteById(Long id);
+    Page<Task> search(TaskSearchValues taskSearchValues);
 }

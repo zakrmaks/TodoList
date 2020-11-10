@@ -7,10 +7,10 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 public interface CategoryService {
-     ResponseEntity<List<Category>>  findAll();
-     ResponseEntity<Category> findById(Long id);
-     ResponseEntity<Category> add(Category category);
-     ResponseEntity<Category>  update(Category category);
-     ResponseEntity deleteById(Long id);
-     ResponseEntity<List<Category>> search(CategorySearchValues categorySearchValues);
+     List<Category>  findAll();
+     Category findById(Long id);
+     Category add(Category category);
+     Category update(Category category);
+     void deleteById(Long id);
+     List<Category> search(CategorySearchValues categorySearchValues);
 }

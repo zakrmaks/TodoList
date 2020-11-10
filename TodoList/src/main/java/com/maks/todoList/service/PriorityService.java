@@ -12,9 +12,9 @@ import java.util.List;
 @Service
 public interface PriorityService {
     List<Priority> findAll();
-    ResponseEntity<Priority> findById(Long id);
-    ResponseEntity<Priority> add(Priority priority);
-    ResponseEntity<Priority> update(Priority priority);
-    ResponseEntity deleteById(Long id);
-    ResponseEntity<List<Priority>> search(PrioritySearchValues prioritySearchValues);
+    Priority  findById(Long id);
+    Priority  add(Priority priority);
+    Priority  update(Priority priority);
+    void deleteById(Long id);
+    List<Priority> search(PrioritySearchValues prioritySearchValues);
 }

@@ -28,55 +28,33 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public ResponseEntity<Task>  findById(Long id) {
+    public Task    findById(Long id) {
 
-        Task task = null;
-        try {
-
-            task = taskRepository.findById(id).get();
-        } catch (NoSuchElementException e) {
-            return new ResponseEntity("id=" + id + " not found", HttpStatus.NOT_ACCEPTABLE);
-        }
-        return ResponseEntity.ok(task);
+        return taskRepository.findById(id).get();
     }
 
     @Override
-    public ResponseEntity<Task> add(Task task) {
-        // check getid because autoincrement of id in DB
-        if (task.getId() != null && task.getId() != 0) {
-            return new ResponseEntity("id CAN'T be null", HttpStatus.NOT_ACCEPTABLE);
-        }
-        if (task.getTitle() == null && task.getTitle().trim().length() == 0) {
-            return new ResponseEntity("missed param: title", HttpStatus.NOT_ACCEPTABLE);
-        }
-        return ResponseEntity.ok(taskRepository.save(task));
+    public Task   add(Task task) {
+
+        return taskRepository.save(task);
     }
 
     @Override
-    public ResponseEntity<Task>  update(Task task) {
-        if (task.getId() == null && task.getId() == 0) {
-            return new ResponseEntity("id CAN'T be null", HttpStatus.NOT_ACCEPTABLE);
-        }
-        if (task.getTitle() == null && task.getTitle().trim().length() == 0) {
-            return new ResponseEntity("missed param: title", HttpStatus.NOT_ACCEPTABLE);
-        }
+    public Task    update(Task task) {
 
-        return ResponseEntity.ok(taskRepository.save(task));
+        return taskRepository.save(task);
     }
 
     @Override
-    public ResponseEntity deleteById(Long id) {
-        try {
+    public void deleteById(Long id) {
+
             taskRepository.deleteById(id);
-        } catch (EmptyResultDataAccessException e) {
-            return new ResponseEntity("id=" + id + " not found", HttpStatus.NOT_ACCEPTABLE);
-        }
-        return new ResponseEntity(HttpStatus.OK);
+
 
     }
 
     @Override
-    public ResponseEntity<Page<Task>> search(TaskSearchValues taskSearchValues) {
+    public Page<Task> search(TaskSearchValues taskSearchValues) {
         //exclude NullPointerException or others variables;
         String text = taskSearchValues.getText() != null ? taskSearchValues.getText() : null;
         Integer completed = taskSearchValues.getCompleted() != null ? taskSearchValues.getCompleted() : null;
@@ -99,6 +77,6 @@ public class TaskServiceImpl implements TaskService {
         Sort sort = Sort.by(direction, sortColumn);
         PageRequest pageRequest = PageRequest.of(pageSize, pageNumber, sort);
 
-        return ResponseEntity.ok(taskRepository.findByParams(text, completed, priorityId, categoryId, pageRequest));
+        return taskRepository.findByParams(text, completed, priorityId, categoryId, pageRequest);
     }
 }

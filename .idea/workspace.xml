@@ -19,15 +19,24 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0230df6e-3807-4f9f-87db-2a6ce104b2da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/PriorityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/PriorityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/PriorityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/PriorityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/PriorityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/PriorityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/service/TaskServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,19 +110,76 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.maks.todoList.controller" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.maks.todoList.controller" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="com.maks.todoList.entity" />
       <recent name="" />
       <recent name="com.maks.TodoList.entity" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.maks.todoList.controller" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.CategoryControllerTest.add">
+    <configuration name="CategoryControllerTest.add" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/TodoList" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.maks.todoList.controller.CategoryControllerTest.add&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CategoryControllerTest.findAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/TodoList" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.maks.todoList.controller.CategoryControllerTest.findAll&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CategoryControllerTest.findById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/TodoList" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.maks.todoList.controller.CategoryControllerTest.findById&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="TodoListApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="TodoList.main" />
       <extension name="coverage">
@@ -129,6 +195,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CategoryControllerTest.add" />
+        <item itemvalue="Gradle.CategoryControllerTest.findById" />
+        <item itemvalue="Gradle.CategoryControllerTest.findAll" />
         <item itemvalue="Spring Boot.TodoListApplication" />
       </list>
     </recent_temporary>
@@ -283,46 +352,50 @@
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state x="2590" y="444" key="GitRewordDialog/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604949565628" />
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1604951423817">
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1604991566438">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.40.1536.824/1920.40.1920.1040/3840.40.1080.1880@1920.40.1920.1040" timestamp="1604991566438" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604951423817" />
-    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1604951423817">
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604991408227" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1604991566438">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.40.1536.824/1920.40.1920.1040/3840.40.1080.1880@1920.40.1920.1040" timestamp="1604991566438" />
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
-    <state width="1877" height="208" key="GridCell.Tab.0.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604951423817" />
-    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1604951423817">
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604991408227" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1604991566438">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.40.1536.824/1920.40.1920.1040/3840.40.1080.1880@1920.40.1920.1040" timestamp="1604991566438" />
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
-    <state width="1877" height="208" key="GridCell.Tab.0.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604951423817" />
-    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1604951423817">
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604991408227" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1604991566438">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.40.1536.824/1920.40.1920.1040/3840.40.1080.1880@1920.40.1920.1040" timestamp="1604991566438" />
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
-    <state width="1877" height="208" key="GridCell.Tab.0.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604951423817" />
-    <state width="1877" height="208" key="GridCell.Tab.1.bottom" timestamp="1604951423818">
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604991408227" />
+    <state width="1877" height="208" key="GridCell.Tab.1.bottom" timestamp="1604989665177">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.1.bottom/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
-    <state width="1877" height="208" key="GridCell.Tab.1.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604951423818" />
-    <state width="1877" height="208" key="GridCell.Tab.1.center" timestamp="1604951423818">
+    <state width="1877" height="208" key="GridCell.Tab.1.bottom/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604989665177" />
+    <state width="1877" height="208" key="GridCell.Tab.1.center" timestamp="1604989665177">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.1.center/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
-    <state width="1877" height="208" key="GridCell.Tab.1.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604951423818" />
-    <state width="1877" height="208" key="GridCell.Tab.1.left" timestamp="1604951423817">
+    <state width="1877" height="208" key="GridCell.Tab.1.center/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604989665177" />
+    <state width="1877" height="208" key="GridCell.Tab.1.left" timestamp="1604989665177">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.1.left/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
-    <state width="1877" height="208" key="GridCell.Tab.1.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604951423817" />
-    <state width="1877" height="208" key="GridCell.Tab.1.right" timestamp="1604951423818">
+    <state width="1877" height="208" key="GridCell.Tab.1.left/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604989665177" />
+    <state width="1877" height="208" key="GridCell.Tab.1.right" timestamp="1604989665177">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.1.right/0.40.1536.824/1920.40.1920.1040@0.40.1536.824" timestamp="1604823319724" />
-    <state width="1877" height="208" key="GridCell.Tab.1.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604951423818" />
+    <state width="1877" height="208" key="GridCell.Tab.1.right/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604989665177" />
     <state width="1877" height="347" key="GridCell.Tab.2.bottom" timestamp="1604782728554">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
@@ -391,18 +464,22 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="33" y="195" width="1517" height="708" maximized="true" key="dock-window-1/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604950647607" />
-    <state x="0" y="40" width="1517" height="708" key="dock-window-2" timestamp="1604950647607">
+    <state x="146" y="228" width="1511" height="630" maximized="true" key="dock-window-2" timestamp="1604985803892">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="0" y="40" width="1517" height="708" key="dock-window-2/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604950647607" />
-    <state x="0" y="40" width="1517" height="708" maximized="true" key="dock-window-3" timestamp="1604950647607">
+    <state x="146" y="228" width="1511" height="630" maximized="true" key="dock-window-2/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604985803892" />
+    <state x="0" y="40" width="1509" height="708" maximized="true" key="dock-window-3" timestamp="1604985803893">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="0" y="40" width="1517" height="708" maximized="true" key="dock-window-3/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604950647607" />
-    <state x="0" y="40" width="1517" height="708" maximized="true" key="dock-window-4" timestamp="1604950647607">
+    <state x="0" y="40" width="1509" height="708" maximized="true" key="dock-window-3/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604985803893" />
+    <state x="0" y="40" width="1509" height="708" maximized="true" key="dock-window-4" timestamp="1604989655528">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="0" y="40" width="1517" height="708" maximized="true" key="dock-window-4/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604950647607" />
+    <state x="0" y="40" width="1509" height="708" maximized="true" key="dock-window-4/0.40.1536.824/1920.40.1920.1040@1920.40.1920.1040" timestamp="1604989655528" />
+    <state x="3840" y="40" width="1096" height="791" maximized="true" key="dock-window-5" timestamp="1604991666965">
+      <screen x="3840" y="40" width="1080" height="1880" />
+    </state>
+    <state x="3840" y="40" width="1096" height="791" maximized="true" key="dock-window-5/0.40.1536.824/1920.40.1920.1040/3840.40.1080.1880@1920.40.1920.1040" timestamp="1604991666965" />
     <state x="2536" y="260" key="run.anything.popup" timestamp="1604907296928">
       <screen x="1920" y="40" width="1920" height="1040" />
     </state>
@@ -413,7 +490,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TodoList/src/main/java/com/maks/todoList/controller/CategoryController.java</url>
-          <line>25</line>
+          <line>28</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
