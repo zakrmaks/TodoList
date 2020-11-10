@@ -18,9 +18,9 @@ public class StatController {
     public StatController(StatService statService) {
         this.statService = statService;
     }
-    @GetMapping("findAll")
+    @GetMapping("/findAll")
     public List<Stat> findAll(){
         return statService.findAll();
     }
 
-}
+    }
