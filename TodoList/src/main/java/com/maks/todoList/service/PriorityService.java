@@ -9,10 +9,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public interface PriorityService {
     List<Priority> findAll();
-    Priority  findById(Long id);
+    Optional<Priority> findById(Long id);
     Priority  add(Priority priority);
     Priority  update(Priority priority);
     void deleteById(Long id);

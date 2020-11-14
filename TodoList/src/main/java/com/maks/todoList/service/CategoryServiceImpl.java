@@ -3,19 +3,17 @@ package com.maks.todoList.service;
 import com.maks.todoList.entity.Category;
 import com.maks.todoList.repository.CategoryRepository;
 import com.maks.todoList.search.CategorySearchValues;
-import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.NoSuchElementException;
+import java.util.Optional;
 
 @Service
 public class CategoryServiceImpl implements CategoryService {
     private CategoryRepository categoryRepository;
 
     public CategoryServiceImpl(CategoryRepository categoryRepository) {
+
         this.categoryRepository = categoryRepository;
     }
 
@@ -25,12 +23,12 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public Category findById(Long id) {
+        public Optional<Category> findById(Long id) {
 
 
-        return categoryRepository.findById(id).get();
+            return categoryRepository.findById(id);
 
-    }
+        }
 
     @Override
     public Category add(Category category) {
@@ -41,6 +39,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public Category update(Category category) {
+
         return categoryRepository.save(category);
     }
 

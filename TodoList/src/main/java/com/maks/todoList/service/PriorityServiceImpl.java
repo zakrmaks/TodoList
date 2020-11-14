@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 @Service
 public class PriorityServiceImpl implements PriorityService {
@@ -25,9 +26,9 @@ public class PriorityServiceImpl implements PriorityService {
     }
 
     @Override
-    public Priority findById(Long id) {
+    public Optional<Priority> findById(Long id) {
 
-        return priorityRepository.findById(id).get();
+        return priorityRepository.findById(id);
 
     }
 
