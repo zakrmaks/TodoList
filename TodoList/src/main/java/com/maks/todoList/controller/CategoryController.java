@@ -4,7 +4,6 @@ package com.maks.todoList.controller;
 import com.maks.todoList.entity.Category;
 import com.maks.todoList.search.CategorySearchValues;
 import com.maks.todoList.service.CategoryService;
-import org.aspectj.bridge.IMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/category")
+@RequestMapping("/categories")
 
 public class CategoryController {
     private CategoryService categoryService;
@@ -30,7 +29,7 @@ public class CategoryController {
     }
 
 
-    @GetMapping("/id/{id}")
+    @GetMapping("/{id}")
 
     public Optional<Category> findById (@PathVariable Long id)  {
 
@@ -50,7 +49,7 @@ public class CategoryController {
         return categoryService.update(category);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
 
     public void deleteById(@PathVariable Long id) {
 

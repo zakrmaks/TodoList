@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/task")
+@RequestMapping("/tasks")
 public class TaskController {
     private TaskService taskService;
 
@@ -30,7 +30,7 @@ public class TaskController {
     }
 
 
-    @GetMapping("/id/{id}")
+    @GetMapping("/{id}")
     public Optional<Task> findById(@PathVariable Long id) {
         return taskService.findById(id);
     }
@@ -46,7 +46,7 @@ public class TaskController {
         return taskService.update(task);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public void deleteById(@PathVariable Long id) {
         taskService.deleteById(id);
     }

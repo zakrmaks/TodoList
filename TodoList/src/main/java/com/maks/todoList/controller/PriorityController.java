@@ -1,25 +1,20 @@
 package com.maks.todoList.controller;
 
 import com.maks.todoList.entity.Priority;
-
 import com.maks.todoList.search.PrioritySearchValues;
 import com.maks.todoList.service.PriorityService;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Constraint;
 import javax.validation.Valid;
-import javax.validation.Validation;
+import javax.validation.constraints.NotNull;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/priority")
+@RequestMapping("/priorities")
 public class PriorityController {
     private PriorityService priorityService;
 
@@ -37,20 +32,15 @@ public class PriorityController {
     }
 
 
-    @GetMapping("/id/{id}")
+    @GetMapping("/{id}")
     public Optional<Priority> findById(@PathVariable Long id) {
-//        Priority priority = null;
-//        try {
+
         return priorityService.findById(id);
-//    } catch (
-//    NoSuchElementException e) {
-//        return new ResponseEntity("id=" + id + " not found", HttpStatus.NOT_ACCEPTABLE);
-//    }
-//        return ResponseEntity.ok(priority);
+
     }
 
     @PostMapping("/add")
-    public Priority add(@RequestBody Priority priority) {
+    public Priority add(@Valid @RequestBody Priority priority) {
 //        if (priority.getId() != null && priority.getId() != 0){
 //            return new ResponseEntity("id MUST be null", HttpStatus.ACCEPTED);
 //        }
@@ -64,7 +54,8 @@ public class PriorityController {
     }
 
     @PutMapping("/update")
-    public Priority update(@RequestBody Priority priority) {
+ //TODO: Validation method
+    public Priority update(@NotNull @RequestBody Priority priority) {
 
 //        if (priority.getId() == null && priority.getId() == 0) {
 //            return new ResponseEntity("id MUST be not null", HttpStatus.NOT_ACCEPTABLE);
@@ -77,7 +68,7 @@ public class PriorityController {
         return priorityService.update(priority);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public void deleteById(@PathVariable Long id) {
 
 //        try {
