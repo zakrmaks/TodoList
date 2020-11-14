@@ -11,8 +11,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.Validation;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 
 @RestController
@@ -35,59 +38,61 @@ public class PriorityController {
 
 
     @GetMapping("/id/{id}")
-    public ResponseEntity<Priority> findById(@PathVariable Long id) {
-        Priority priority = null;
-        try {
-         priorityService.findById(id);
-    } catch (
-    NoSuchElementException e) {
-        return new ResponseEntity("id=" + id + " not found", HttpStatus.NOT_ACCEPTABLE);
-    }
-        return ResponseEntity.ok(priority);
+    public Optional<Priority> findById(@PathVariable Long id) {
+//        Priority priority = null;
+//        try {
+        return priorityService.findById(id);
+//    } catch (
+//    NoSuchElementException e) {
+//        return new ResponseEntity("id=" + id + " not found", HttpStatus.NOT_ACCEPTABLE);
+//    }
+//        return ResponseEntity.ok(priority);
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Priority> add(@RequestBody Priority priority){
-        if (priority.getId() != null && priority.getId() != 0){
-            return new ResponseEntity("id MUST be null", HttpStatus.ACCEPTED);
-        }
-        if (priority.getTitle() == null && priority.getTitle().trim().length() == 0){
-            return new ResponseEntity("missed param: title", HttpStatus.NOT_ACCEPTABLE);
-        }
-        if (priority.getColor() == null || priority.getColor().trim().length() == 0){
-            return new ResponseEntity("missed param: color", HttpStatus.NOT_ACCEPTABLE);
-        }
-return ResponseEntity.ok(priorityService.add(priority));
+    public Priority add(@RequestBody Priority priority) {
+//        if (priority.getId() != null && priority.getId() != 0){
+//            return new ResponseEntity("id MUST be null", HttpStatus.ACCEPTED);
+//        }
+//        if (priority.getTitle() == null && priority.getTitle().trim().length() == 0){
+//            return new ResponseEntity("missed param: title", HttpStatus.NOT_ACCEPTABLE);
+//        }
+//        if (priority.getColor() == null || priority.getColor().trim().length() == 0){
+//            return new ResponseEntity("missed param: color", HttpStatus.NOT_ACCEPTABLE);
+//        }
+        return priorityService.add(priority);
     }
+
     @PutMapping("/update")
-    public ResponseEntity update(@RequestBody Priority priority) {
+    public Priority update(@RequestBody Priority priority) {
 
-        if (priority.getId() == null && priority.getId() == 0) {
-            return new ResponseEntity("id MUST be not null", HttpStatus.NOT_ACCEPTABLE);
-        }
-        if (priority.getTitle() == null && priority.getTitle().trim().length() == 0){
-            return new ResponseEntity("missed param: title", HttpStatus.NOT_ACCEPTABLE);
-        }
-        if (priority.getColor() == null || priority.getColor().trim().length() == 0){
-            return new ResponseEntity("missed param: color", HttpStatus.NOT_ACCEPTABLE);
-        }return ResponseEntity.ok(priorityService.update(priority));
+//        if (priority.getId() == null && priority.getId() == 0) {
+//            return new ResponseEntity("id MUST be not null", HttpStatus.NOT_ACCEPTABLE);
+//        }
+//        if (priority.getTitle() == null && priority.getTitle().trim().length() == 0){
+//            return new ResponseEntity("missed param: title", HttpStatus.NOT_ACCEPTABLE);
+//        }
+//        if (priority.getColor() == null || priority.getColor().trim().length() == 0){
+//            return new ResponseEntity("missed param: color", HttpStatus.NOT_ACCEPTABLE);
+        return priorityService.update(priority);
     }
+
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity deleteById(@PathVariable Long id) {
+    public void deleteById(@PathVariable Long id) {
 
-        try {
-         priorityService.deleteById(id);
-    }catch (
-    EmptyResultDataAccessException e){
-        return new ResponseEntity("id="+id+" not found", HttpStatus.NOT_ACCEPTABLE);
-    }
-        return new ResponseEntity(HttpStatus.OK);
+//        try {
+        priorityService.deleteById(id);
+//    }catch (
+//    EmptyResultDataAccessException e){
+//        return new ResponseEntity("id="+id+" not found", HttpStatus.NOT_ACCEPTABLE);
+//    }
+//        return new ResponseEntity(HttpStatus.OK);
     }
 
     @PostMapping("/search")
-    public ResponseEntity<List<Priority>> search(@RequestBody PrioritySearchValues prioritySearchValues){
+    public List<Priority> search(@RequestBody PrioritySearchValues prioritySearchValues) {
 
         //if empty - return all values
-        return ResponseEntity.ok(priorityService.search(prioritySearchValues));
+        return priorityService.search(prioritySearchValues);
     }
 }
