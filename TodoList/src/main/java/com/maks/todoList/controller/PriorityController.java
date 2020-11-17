@@ -1,14 +1,14 @@
 package com.maks.todoList.controller;
 
+import com.maks.todoList.dto.OutNullParam;
+import com.maks.todoList.dto.WithNullParam;
 import com.maks.todoList.entity.Priority;
 import com.maks.todoList.search.PrioritySearchValues;
 import com.maks.todoList.service.PriorityService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Constraint;
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,7 +40,8 @@ public class PriorityController {
     }
 
     @PostMapping("/add")
-    public Priority add(@Valid @RequestBody Priority priority) {
+    public Priority add(@Validated(WithNullParam.class) @RequestBody Priority priority) {
+
 //        if (priority.getId() != null && priority.getId() != 0){
 //            return new ResponseEntity("id MUST be null", HttpStatus.ACCEPTED);
 //        }
@@ -55,7 +56,7 @@ public class PriorityController {
 
     @PutMapping("/update")
  //TODO: Validation method
-    public Priority update(@NotNull @RequestBody Priority priority) {
+    public Priority update(@Validated({OutNullParam.class}) @RequestBody Priority priority) {
 
 //        if (priority.getId() == null && priority.getId() == 0) {
 //            return new ResponseEntity("id MUST be not null", HttpStatus.NOT_ACCEPTABLE);
@@ -65,6 +66,7 @@ public class PriorityController {
 //        }
 //        if (priority.getColor() == null || priority.getColor().trim().length() == 0){
 //            return new ResponseEntity("missed param: color", HttpStatus.NOT_ACCEPTABLE);
+
         return priorityService.update(priority);
     }
 
